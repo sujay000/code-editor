@@ -5,6 +5,7 @@ const htmlEditor = CodeMirror(
     tabsize: 4,
     mode: "xml",
     autoCloseTags: true,
+    theme: "material-palenight",
   }
 );
 const cssEditor = CodeMirror(
@@ -13,12 +14,16 @@ const cssEditor = CodeMirror(
     lineNumbers: true,
     tabsize: 4,
     mode: "css",
+    theme: "material-palenight",
+    autoCloseBrackets: true,
   }
 );
 const jsEditor = CodeMirror(document.querySelector(".editor .code .js-code"), {
   lineNumbers: true,
   tabsize: 4,
   mode: "javascript",
+  theme: "material-palenight",
+  autoCloseBrackets: true,
 });
 
 document.querySelector("#run-btn").addEventListener("click", () => {
